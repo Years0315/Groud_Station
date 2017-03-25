@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.years.ground_station.widget.scrollview.ElasticScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:keepScreenOn="true"
+    android:layout_height="match_parent"
+    android:background="@color/c14">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:id="@+id/relat_scan"
+        android:layout_marginLeft="@dimen/padding_d1"
+        android:layout_marginRight="@dimen/padding_d1"
+        android:layout_marginTop="@dimen/padding_d1"
+        android:background="@drawable/activity_home_other">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_home_scan"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_usb"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_scanresult"
+            android:textSize="@dimen/text_s1"
+            android:textColor="@color/c14"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/activity_home_scan"/>
+    </RelativeLayout>
+
+    <View style="@style/GrayLineStyle_Hor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/padding_d1"
+        android:layout_marginRight="@dimen/padding_d1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/activity_home_receive"
+            android:id="@+id/relat_receive"
+            android:clickable="true"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_receive"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_receive"/>
+
+        </RelativeLayout>
+
+        <View style="@style/GrayLineStyle_Ver"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:id="@+id/relat_frame"
+            android:clickable="true"
+            android:background="@drawable/activity_home_frame">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_frame"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_frame"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/GrayLineStyle_Hor"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/padding_d1"
+        android:layout_marginRight="@dimen/padding_d1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/activity_home_set"
+            android:id="@+id/relat_set"
+            android:clickable="true"
+            android:layout_weight="2">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_set"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_set"/>
+
+        </RelativeLayout>
+
+        <View style="@style/GrayLineStyle_Ver"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/relat_curve"
+            android:clickable="true"
+            android:background="@drawable/activity_home_curve">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_curve"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_curve"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/GrayLineStyle_Hor"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/padding_d1"
+        android:layout_marginRight="@dimen/padding_d1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/activity_home_state"
+            android:id="@+id/relat_state"
+            android:clickable="true"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_state"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_state"/>
+
+        </RelativeLayout>
+
+        <View style="@style/GrayLineStyle_Ver"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/relat_control"
+            android:clickable="true"
+            android:background="@drawable/activity_home_control">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_control"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_control"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View style="@style/GrayLineStyle_Hor"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/padding_d1"
+        android:layout_marginRight="@dimen/padding_d1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/activity_home_calibration"
+            android:id="@+id/relat_calibration"
+            android:clickable="true"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_calibration"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_calibration"/>
+
+        </RelativeLayout>
+
+        <View style="@style/GrayLineStyle_Ver"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/relat_pid"
+            android:clickable="true"
+            android:background="@drawable/activity_home_pid">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_pid"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_pid"/>
+
+        </RelativeLayout>
+
+        <View style="@style/GrayLineStyle_Ver"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/relat_connection"
+            android:clickable="true"
+            android:background="@drawable/activity_home_connection">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_connection"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_s1"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_connection"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/GrayLineStyle_Hor"/>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/padding_d1"
+        android:layout_marginRight="@dimen/padding_d1"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/activity_home_other"
+            android:id="@+id/relat_other"
+            android:clickable="true"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_home_other"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/c14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/activity_home_other"/>
+
+        </RelativeLayout>
+
+        <View style="@style/GrayLineStyle_Ver"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</com.years.ground_station.widget.scrollview.ElasticScrollView>

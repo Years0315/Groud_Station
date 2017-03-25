@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.years.ground_station.widget.scrollview.ElasticScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c14">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_linkmode"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp"
+            android:textColor="@color/c1"
+            android:text="通信方式："/>
+
+        <View style="@style/GrayLineStyle_Hor"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/padding_d1"
+            android:layout_marginRight="@dimen/padding_d1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/c20"
+                android:id="@+id/relat_ble2"
+                android:clickable="true"
+                android:layout_weight="2">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_bluetooth_two"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_s1"
+                    android:textColor="@color/c14"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/activity_set_bluetooth2"/>
+
+            </RelativeLayout>
+
+            <View style="@style/GrayLineStyle_Ver"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/relat_ble4"
+                android:clickable="true"
+                android:background="@color/c15">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_bluetooth_four"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_s1"
+                    android:textColor="@color/c14"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/activity_set_bluetooth4"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View style="@style/GrayLineStyle_Hor"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_marginLeft="@dimen/padding_d1"
+            android:layout_marginRight="@dimen/padding_d1"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/c1"
+                android:id="@+id/relat_usb"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_usb"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_s1"
+                    android:textColor="@color/c14"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/activity_set_usb"/>
+
+            </RelativeLayout>
+
+            <View style="@style/GrayLineStyle_Ver"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/relat_udp"
+                android:clickable="true"
+                android:background="@color/c27">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_set_udp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_s1"
+                    android:textColor="@color/c14"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/activity_set_udp"/>
+
+            </RelativeLayout>
+
+            <View style="@style/GrayLineStyle_Ver"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/relat_tcp"
+                android:clickable="true"
+                android:background="@color/c25">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_set_tcp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_s1"
+                    android:textColor="@color/c14"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="@string/activity_set_tcp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.years.ground_station.widget.scrollview.ElasticScrollView>

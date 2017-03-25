@@ -1,0 +1,83 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/app_color</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textSize">@dimen/s4</item>
+        <item name="android:textStyle">normal</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+        <item name="actionBarSize">@dimen/action_bar_size</item>
+    </style>
+
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/app_color</item>
+        <item name="android:titleTextStyle">@style/TitleTextStyle</item>
+        <item name="background">@color/app_color</item>
+        <item name="homeAsUpIndicator">@mipmap/icon_back</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ActivityStyle" parent="@style/AppTheme">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+
+    <style name="AnimationActivity" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/push_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/push_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/push_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/push_right_out</item>
+    </style>
+
+    <style name="ActivityNoActionBar" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/app_color</item>
+        <item name="android:screenOrientation">portrait</item>
+    </style>
+
+    <style name="ActivityNotTitleByTranslucent" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowBackground">@color/app_color</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="AboutItemStyle">
+        <item name="android:textSize">@dimen/s8</item>
+        <item name="android:textColor">@color/uc_item_child_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/about_item_selector</item>
+        <item name="android:paddingLeft">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">50.0dip</item>
+        <item name="android:drawablePadding">5.0dip</item>
+    </style>
+
+
+    <style name="GrayLineStyle_Hor">
+        <item name="android:background">@color/c14</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">5dp</item>
+    </style>
+    <style name="GrayLineStyle_Hor1">
+        <item name="android:background">@color/c13</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+    <style name="GrayLineStyle_Ver">
+        <item name="android:background">@color/c14</item>
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    
+    <style name="edittext_shape" parent="@android:style/Widget.EditText">
+        <item name="android:background">@drawable/activity_receive_et_shape</item>
+    </style>
+
+</resources>

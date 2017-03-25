@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c13">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_paired"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+        android:text="请选择一个设备连接"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_scaning"
+        android:visibility="gone"
+        android:background="#666"
+        android:textColor="#fff"
+        android:paddingLeft="5dp"
+        android:text="扫描到的设备："/>
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/c13"
+        android:id="@+id/list_device"
+        android:layout_weight="1"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_scandevice"
+        android:text="扫描新设备"
+        />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#ff028ce6</color><!--程序整体颜色-->
+
+    <color name="rippelColor">#FFFFFF</color>  <!--底部按钮水纹ripple颜色-->
+
+    <color name="c1">#ff028ce6</color>
+    <color name="c10">#ffa0a0a0</color>
+    <color name="c11">#ff1e1e1e</color>
+    <color name="c12">#fff16149</color>
+    <color name="c13">#ffdcdcdc</color>
+    <color name="c14">@android:color/white</color>
+    <color name="c15">#ff157efb</color>
+    <color name="c16">#fff6f7f9</color>
+    <color name="c17">#ff8c8c8c</color>
+    <color name="c18">@android:color/black</color>
+    <color name="c19">#ffa3a3a3</color>
+    <color name="c2">#fff74d30</color>
+    <color name="c20">#ff1fab11</color>
+    <color name="c21">#fff7f7f7</color>
+    <color name="c22">#ffaaaaaa</color>
+    <color name="c23">#ffacacac</color>
+    <color name="c24">#ffed4e60</color>
+    <color name="c25">#ff1ab993</color>
+    <color name="c26">#ff028ce6</color>
+    <color name="c27">#ffff8140</color>
+    <color name="c3">#ff323232</color>
+    <color name="c4">#ff646464</color>
+    <color name="c5">#ffababab</color>
+    <color name="c6">#ffc8c8c8</color>
+    <color name="c7">#ff1d1d1d</color>
+    <color name="c8">#ff505050</color>
+    <color name="c9">#ff787878</color>
+
+    <color name="uc_bg">#fff6f7f9</color><!--关于 背景色-->
+    <color name="uc_item_child_text_color">#ff646464</color><!--关于  字体颜色-->
+    <color name="uc_item_click_p">#ffeeeeee</color><!--关于 item点击颜色-->
+
+</resources>

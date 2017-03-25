@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.years.ground_station" >
+    <!--USB-->
+    <uses-feature android:name="android.hardware.usb.host"/>
+    <!--Bluetooth-->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_start"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.Activity_Splash"
+            android:label="@string/app_name"
+            android:theme="@style/ActivityNotTitleByTranslucent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.Activity_Home"
+            android:theme="@style/ActivityStyle"
+            />
+        <service android:name=".service.Service_Test">
+            <intent-filter>
+                <action android:name="com.years.ground_station.service.Service_Test"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.Service_usb"/>
+        <service android:name=".service.Service_ble4"/>
+
+        <activity android:name=".activity.Activity_About"
+            android:theme="@style/ActivityStyle"
+            android:label="@string/activity_about"
+            />
+        <activity android:name=".activity.Activity_Set"
+            android:theme="@style/ActivityStyle"
+            android:label="@string/activity_set"
+            />
+        <activity android:name=".activity.Activity_Receive"
+            android:theme="@style/ActivityStyle"
+            android:label="@string/activity_receive"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            />
+        <activity android:name=".activity.Activity_Curve"
+            android:theme="@style/ActivityStyle"
+            android:label="数据波形"
+            android:screenOrientation="landscape"
+            />
+
+    </application>
+
+</manifest>

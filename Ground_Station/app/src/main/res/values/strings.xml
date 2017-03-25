@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">手机调试助手</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="current_version_format">当前版本 v 1.0</string>
+    <string name="share_friend">分享给好友</string>
+    <string name="update_version">版本更新</string>
+    <string name="activity_about_text">欢迎使用手机调试助手，有任何问题请联系年华。\n邮箱:791276337@qq.com</string>
+
+    <string name="activity_home_tips0">未搜索到设备</string>
+    <string name="activity_home_tips1">连接到到匿名数传</string>
+    <string name="activity_home_tips2">连接到匿名飞控</string>
+    <string name="activity_home_tips3">连接到其它设备</string>
+    <string name="activity_home_tips4">未找到设备</string>
+    <string name="activity_home_tips11">搜索到到匿名数传</string>
+    <string name="activity_home_tips22">搜索到匿名飞控</string>
+    <string name="activity_home_tips33">搜索到其它设备</string>
+
+    <string name="activity_home_scan">搜索设备</string>
+    <string name="activity_home_set">通信设置</string>
+    <string name="activity_home_curve">数据波形</string>
+    <string name="activity_home_receive">基本收发</string>
+    <string name="activity_home_frame">高级收码</string>
+    <string name="activity_home_state">飞控状态</string>
+    <string name="activity_home_control">飞行控制</string>
+    <string name="activity_home_calibration">飞控校准</string>
+    <string name="activity_home_pid">PID写入</string>
+    <string name="activity_home_connection">通信协议</string>
+    <string name="activity_home_other">其它功能</string>
+
+
+    <string name="activity_about">关于年华</string>
+
+
+    <string name="activity_set">通信设置</string>
+    <string name="activity_set_bluetooth2">蓝牙2.0</string>
+    <string name="activity_set_bluetooth4">蓝牙4.0</string>
+    <string name="activity_set_usb">USB HID</string>
+    <string name="activity_set_udp">UDP</string>
+    <string name="activity_set_tcp">TCP</string>
+
+    <string name="activity_receive">基本接收</string>
+    <string name="activity_receive_state">连接状态</string>
+    <string name="activity_receive_tx">TX 0</string>
+    <string name="activity_receive_rx">RX 0</string>
+
+
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/uc_bg"
+    android:gravity="center_horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:background="@mipmap/icon_about_logo" />
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:text="@string/current_version_format"
+        android:textColor="@color/c17" />
+
+    <View style="@style/GrayLineStyle_Hor1" />
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:paddingLeft="20.0dip"
+        style="@style/AboutItemStyle"
+        android:clickable="true"
+        android:drawableRight="@mipmap/icon_right_arrow"
+        android:text="@string/share_friend" />
+
+    <View style="@style/GrayLineStyle_Hor1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_update"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:paddingLeft="20.0dip"
+        android:clickable="true"
+        style="@style/AboutItemStyle">
+        <TextView
+            android:id="@+id/tv_my_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/update_version"
+            android:textColor="@color/uc_item_child_text_color"
+            android:textSize="@dimen/s8" />
+        <ImageView
+            android:id="@+id/img_red_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_my_message"
+            android:background="@mipmap/icon_red_dot"
+            android:visibility="gone" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_right_arrow" />
+    </RelativeLayout>
+    <View style="@style/GrayLineStyle_Hor1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/uc_bg"
+        android:layout_marginTop="50dp"
+        style="@style/AboutItemStyle"
+        android:lineSpacingExtra="10dp"
+        android:gravity="center"
+        android:text="@string/activity_about_text"
+        />
+</LinearLayout>
